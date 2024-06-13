@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  mail:
+    host: org.springframework.mail.javamail.JavaMailSender;
+    port: 465
+    username: ${YANDEX_SMTP_EMAIL}
+    password: ${YANDEX_SMTP_PASSWORD}
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
